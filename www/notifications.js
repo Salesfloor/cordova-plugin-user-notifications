@@ -2,7 +2,7 @@
  * Cordova User Notifications Plugin
  */
 
-module.exports.removeAllDelivered = function (options, successCallback) {
+module.exports.removeAllDelivered = function (successCallback) {
   cordova.exec(
     successCallback,
     function () {
@@ -10,6 +10,6 @@ module.exports.removeAllDelivered = function (options, successCallback) {
     },
     'UserNotifications',
     'removeAllDelivered',
-    [options]
+    []
   );
 };
