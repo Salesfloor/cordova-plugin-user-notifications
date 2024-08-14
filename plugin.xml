@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-template" version="0.0.0">
+  <name>UserNotifications</name>
+  <description>Cordova Plugin User Notifications</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova, plugin, notifications</keywords>
+
+  <js-module src="www/notifications.js" name="notifications">
+    <clobbers target="cordova.plugins.notifications.user" />
+    <clobbers target="plugins.notifications.user" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="UserNotifications" >
+        <param name="android-package" value="cordova.plugin.UserNotifications"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/UserNotifications.java" target-dir="src/cordova/plugin" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="UserNotifications">
+        <param name="ios-package" value="CPUserNotifications" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CPUserNotifications.h" />
+    <source-file src="src/ios/CPUserNotifications.m" />
+  </platform>
+
+</plugin>

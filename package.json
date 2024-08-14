@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "name": "cordova-plugin-user-notifications",
+  "cordova_name": "CordovaPluginUserNotifications",
+  "description": "Will allow to remove all delivered user notifications",
+  "license": "Apache 2.0",
+  "author": {
+    "name": "Veaceslav Botnaru",
+    "email": "veaceslav@salesfloor.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Salesfloor/cordova-plugin-user-notifications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Salesfloor/cordova-plugin-user-notifications/issues"
+  },
+  "keywords": [
+    "cordova",
+    "plugin"
+  ]
+}
