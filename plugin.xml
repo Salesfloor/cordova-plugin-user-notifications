@@ -18,7 +18,7 @@
         <param name="android-package" value="cordova.plugin.UserNotifications"/>
       </feature>
     </config-file>
-    <source-file src="src/android/UserNotifications.java" target-dir="src/cordova/plugin" />
+    <source-file src="src/android/UserNotifications.java" target-dir="src/com/cordova/plugins" />
   </platform>
 
   <!-- ios -->

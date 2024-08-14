@@ -5,7 +5,7 @@
 - (void)removeAllDelivered:(CDVInvokedUrlCommand*)command
 {
     NSString* msg;
-    msg = [[NSString stringWithFormat: @"%@", "removeAllDelivered executed"] retain];
+    msg = [NSString stringWithFormat: @"%s", "removeAllDelivered executed"];
 
     CDVPluginResult* result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:msg];
     [self.commandDelegate sendPluginResult:result callbackId:command.callbackId];
