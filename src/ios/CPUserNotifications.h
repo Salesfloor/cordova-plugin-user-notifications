@@ -2,6 +2,6 @@
 
 @interface CPUserNotifications : CDVPlugin
 
-- (void)removeAllDelivered : (CDVInvokedUrlCommand*)command;
+- (void)removeAllDelivered:(CDVInvokedUrlCommand*)command;
 
 @end
