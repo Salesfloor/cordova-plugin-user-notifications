@@ -2,7 +2,7 @@ package cordova.plugin;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
-import android.app.NotificationManager
+import android.app.NotificationManager;
 
 public class UserNotifications extends CordovaPlugin {
 
