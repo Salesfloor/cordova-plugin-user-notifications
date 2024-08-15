@@ -10,14 +10,14 @@ public class UserNotifications extends CordovaPlugin {
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
         if (action.equals("removeAllDelivered")) {
             removeAllDelivered();
+            callbackContext.success();
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 
     private void removeAllDelivered() {
-        NotificationManager notificationManager = getSystemService(NotificationManager.class);
+        NotificationManager notificationManager = cordova.getActivity().getSystemService(NotificationManager.class);
         notificationManager.cancelAll();
     }
 
