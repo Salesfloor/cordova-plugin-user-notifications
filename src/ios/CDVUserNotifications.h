@@ -1,6 +1,6 @@
 ﻿#import <Cordova/CDV.h>
 
-@interface CPUserNotifications : CDVPlugin
+@interface CDVUserNotifications : CDVPlugin
 
 - (void)removeAllDelivered:(CDVInvokedUrlCommand*)command;
 

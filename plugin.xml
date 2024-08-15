@@ -25,11 +25,11 @@
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
       <feature name="UserNotifications">
-        <param name="ios-package" value="CPUserNotifications" />
+        <param name="ios-package" value="CDVUserNotifications" />
       </feature>
     </config-file>
-    <header-file src="src/ios/CPUserNotifications.h" />
-    <source-file src="src/ios/CPUserNotifications.m" />
+    <header-file src="src/ios/CDVUserNotifications.h" />
+    <source-file src="src/ios/CDVUserNotifications.m" />
   </platform>
 
 </plugin>
